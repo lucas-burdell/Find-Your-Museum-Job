@@ -138,8 +138,8 @@ var CalculateJob = (function(){
             var thirdInitial = parseInt($("#inputThirdInitial").val());
             var month = parseInt($("#inputMonth").val());
             var date = parseInt($("#inputDate").val());
-            if (firstInitial === -1 || secondInitial === -1 || thirdInitial === -1 ||
-                    month === -1 || date === -1) {
+            if (isNaN(firstInitial) || isNaN(secondInitial) || isNaN(thirdInitial) ||
+                isNaN(month) || isNaN(date) ) {
                 return null;
             } else {
                 var text = (firstInitialWords[firstInitial] + " of " + secondInitialWords[secondInitial] +
