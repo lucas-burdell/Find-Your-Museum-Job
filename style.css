@@ -1,0 +1,9 @@
+.bordered-block {
+    border-radius: 2px;
+    border: 1px solid #aaaaaa;
+    background: #fefefe;
+}
+
+.questiondiv {
+	margin: 20px;
+}
